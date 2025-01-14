@@ -1,1 +1,0 @@
-{"file":"about-ChzyqJzn.js","mappings":";;;;;;;;;;;;;;;AAKA,MAAK,YAAU,CAEf;;AAPA,QAAA,MAAAA,eAAA,MAAA,CAAA,wBAAA;;;;;;;;;","names":["_ssrRenderAttrs"],"sources":["../../../../pages/about.vue"],"sourcesContent":["<template>\r\n    <h1>Hello from About</h1>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n\r\n}\r\n</script>\r\n\r\n<style>\r\n\r\n</style>"],"version":3}
