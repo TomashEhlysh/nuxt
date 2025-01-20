@@ -1,0 +1,23 @@
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-fluid{
+    max-width: 100%;
+}
+.btn{
+    border-radius: 16px;
+    background:#BAB4E1;
+    color: #FAFAFA;
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 0 8px;
+}

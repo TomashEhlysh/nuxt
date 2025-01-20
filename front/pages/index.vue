@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>
-            This is a home page
+            {{ $t('title') }}
         </h1>
     </div>
 </template>
@@ -10,6 +10,7 @@
 import { ref, watchEffect } from 'vue'
 import { useHead, useRuntimeConfig } from '#imports'
 const config = useRuntimeConfig()
+
 const { data: pageData, error: pageError } = await useFetch(`${config.public.apiBase}/getPage/home`)
 const { data: goods, error: goodsError } = await useFetch(`${config.public.apiBase}/getGoods`)
 
