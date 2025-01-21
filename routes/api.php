@@ -11,4 +11,4 @@ Route::post('/addGood', [GoodController::class, 'addGood']);
 Route::delete('/deleteGood/{id}', [GoodController::class, 'deleteGood']);
 
 
-Route::get('/getPage/{page}', [PageController::class, 'getPage']);
+Route::get('/getPage/{page}/{lang}', [PageController::class, 'getPage']);

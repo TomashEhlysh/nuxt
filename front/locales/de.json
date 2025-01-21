@@ -1,3 +1,50 @@
 {
-    "title": "De title"
+    "title": "DE title",
+    "header": {
+        "menu": {
+            "item1": "Angebote",
+            "item2": "Geschenkgutscheine",
+            "item3": "Geschäfte",
+            "item4": {
+                "head": "Mehr",
+                "item1": "Punkt1",
+                "item2": "Punkt2",
+                "item3": "Punkt3"
+            },
+            "btn": "Kontaktieren"
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "Über uns",
+            "item1": "Über die Marke",
+            "item2": "Bewertungen",
+            "item3": "Treueprogramm",
+            "item4": "Geschenkgutscheine",
+            "item5": "Dropshipping",
+            "item6": "Partnerschaft",
+            "item7": "Nachrichten",
+            "item8": "Blog",
+            "item9": "Stellenangebote",
+            "item10": "Datenschutzrichtlinie",
+            "item11": "Öffentliches Angebot"
+        },
+        "cabinet": {
+            "title": "Kundenbereich",
+            "item1": "Anmelden",
+            "item2": "Konto erstellen",
+            "item3": "Bestellungen",
+            "item4": "Wunschliste",
+            "item5": "Vergleichsliste"
+        },
+        "order": {
+            "title": "Bestellung aufgeben",
+            "item1": "Lieferung und Zahlung",
+            "item2": "Garantie (Rückgabe und Reparatur von Geräten)",
+            "item3": "Für Großkunden",
+            "item4": "Für Botschafter",
+            "item5": "Liste häufiger Fragen"
+        }
+    }
+    
 }

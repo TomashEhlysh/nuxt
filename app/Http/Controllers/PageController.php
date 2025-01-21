@@ -7,12 +7,14 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function getPage($page)
+    public function getPage($page, $lang)
     {
-        $page = Page::where('page', $page)->first();
+        $page = Page::where('page', $page)
+            ->where('lang', $lang)
+            ->first();
         if ($page) {
             return response()->json($page);
         }
-        return response()->json(['page'=>'Default','title'=>'Default','description'=>'Default']); // Повертаємо помилку, якщо товар не знайдено
+        return response()->json(['page'=>'Default','title'=>'Default','description'=>'Default']);
     }
 }

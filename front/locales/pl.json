@@ -1,3 +1,50 @@
 {
-    "title": "PL title"
+    "title": "PL title",
+    "header": {
+        "menu": {
+            "item1": "Promocje",
+            "item2": "Karty podarunkowe",
+            "item3": "Sklepy",
+            "item4": {
+                "head": "Więcej",
+                "item1": "Punkt1",
+                "item2": "Punkt2",
+                "item3": "Punkt3"
+            },
+            "btn": "Skontaktuj się"
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "O nas",
+            "item1": "O marce",
+            "item2": "Opinie",
+            "item3": "Program lojalnościowy",
+            "item4": "Karty podarunkowe",
+            "item5": "Dropshipping",
+            "item6": "Partnerstwo",
+            "item7": "Aktualności",
+            "item8": "Blog",
+            "item9": "Oferty pracy",
+            "item10": "Polityka prywatności",
+            "item11": "Oferta publiczna"
+        },
+        "cabinet": {
+            "title": "Konto klienta",
+            "item1": "Zaloguj się",
+            "item2": "Utwórz konto",
+            "item3": "Zamówienia",
+            "item4": "Lista życzeń",
+            "item5": "Lista porównań"
+        },
+        "order": {
+            "title": "Zamówienie",
+            "item1": "Dostawa i płatność",
+            "item2": "Gwarancja (Zwroty i naprawa sprzętu)",
+            "item3": "Dla klientów hurtowych",
+            "item4": "Dla ambasadorów",
+            "item5": "Lista popularnych pytań"
+        }
+    }
+    
 }

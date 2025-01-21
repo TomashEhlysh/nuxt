@@ -1,3 +1,49 @@
 {
-    "title": "EN title"
+    "title": "EN title",
+    "header": {
+        "menu": {
+            "item1": "Promotions",
+            "item2": "Gift Certificates",
+            "item3": "Stores",
+            "item4": {
+                "head": "More",
+                "item1": "Item1",
+                "item2": "Item2",
+                "item3": "Item3"
+            },
+            "btn": "Contact"
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "About Us",
+            "item1": "About the Brand",
+            "item2": "Reviews",
+            "item3": "Loyalty Program",
+            "item4": "Gift Certificates",
+            "item5": "Dropshipping",
+            "item6": "Partnership",
+            "item7": "News",
+            "item8": "Blog",
+            "item9": "Careers",
+            "item10": "Privacy Policy",
+            "item11": "Public Offer"
+        },
+        "cabinet": {
+            "title": "Customer Cabinet",
+            "item1": "Log In",
+            "item2": "Create Account",
+            "item3": "Orders",
+            "item4": "Wishlist",
+            "item5": "Comparison List"
+        },
+        "order": {
+            "title": "Order Checkout",
+            "item1": "Delivery and Payment",
+            "item2": "Warranty (Return and Equipment Repair)",
+            "item3": "For Wholesale Buyers",
+            "item4": "For Ambassadors",
+            "item5": "List of Popular Questions"
+        }
+    }    
 }

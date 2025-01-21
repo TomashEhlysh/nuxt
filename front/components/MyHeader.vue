@@ -4,7 +4,7 @@
         <header class="header">
             <div class="container">
                 <nav class="header-nav">
-                    <NuxtLink href="/" class="logo">
+                    <NuxtLink :href="`/${currentLocale}`" class="logo">
                         <img src="/images/logo.png" alt="Logo">
                     </NuxtLink>
                     <Select v-model="selectedCity" :options="cities" optionLabel="name" class="header-cities" >
@@ -17,33 +17,36 @@
                     <ul class="header-list">
                         <li class="header-item header-sell">
                             <NuxtLink href="/">
-                                Акції
+                                {{ $t('header.menu.item1') }}
                             </NuxtLink>
                         </li>
                         <li class="header-item">
                             <NuxtLink href="/">
-                                Подарункові сертифікати
+                                {{ $t('header.menu.item2') }}
                             </NuxtLink>
                         </li>
                         <li class="header-item">
                             <NuxtLink href="/">
-                                Магазини
+                                {{ $t('header.menu.item3') }}
                             </NuxtLink>
                         </li>
                         <li class="header-item">
                             <a @click="subList = !subList" href="#">
-                                Ще
+                                {{ $t('header.menu.item4.head') }}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path d="M7.42767 0C7.91447 0 8.16872 0.739513 7.87504 1.21727L7.83162 1.28027L4.40346 5.78035C4.30508 5.90949 4.17418 5.98706 4.03533 5.99852C3.89647 6.00998 3.7592 5.95454 3.64927 5.8426L3.59556 5.78035L0.167408 1.28027L0.119985 1.20977L0.0891323 1.15202L0.0582786 1.08002L0.0485654 1.05302L0.0331397 1.00277L0.0148554 0.921766L0.0091424 0.882015L0.00342798 0.837015L0.00114346 0.794264L0 0.750013L0.00114346 0.705762L0.00399923 0.662262L0.0091424 0.617261L0.0148554 0.57826L0.0331397 0.497259L0.0485654 0.447008L0.0885611 0.348006L0.125699 0.280505L0.167408 0.219754L0.221116 0.157503L0.265111 0.117002L0.319961 0.0765015L0.34053 0.0637511L0.378811 0.0435005L0.440518 0.0195004L0.4708 0.0120001L0.505082 0.00449975L0.537649 0.00149992L7.42767 0Z" fill="#BAB4E1"/>
+                                </svg>
                             </a>
                             <ul class="header-subList" v-if="subList">
                                 <li class="header-subItem">
                                     <NuxtLink href="/">
-                                        Пункт1
+                                        {{ $t('header.menu.item4.item1') }}
                                     </NuxtLink>
                                     <NuxtLink href="/">
-                                        Пункт2
+                                        {{ $t('header.menu.item4.item2') }}
                                     </NuxtLink>
                                     <NuxtLink href="/">
-                                        Пункт3
+                                        {{ $t('header.menu.item4.item3') }}
                                     </NuxtLink>
                                 </li>
                             </ul>
@@ -60,7 +63,7 @@
                     </button>
                     <ul class="header-languages_list">
                         <li class="header-languages_item" v-for="lang in langs" :key="lang">
-                            <NuxtLink :to="`/${lang.code}`">
+                            <NuxtLink :to="`/${lang.code}`" :class="lang.code == currentLocale ? 'active' : ''" >
                                 {{ lang.name }}
                             </NuxtLink>
                         </li>
@@ -72,21 +75,16 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n';
 export default {
     data(){
         return{
             cities: [
-                {id: 1, name: "Київ"},
-                {id: 2, name: "Львів"},
-                {id: 3, name: "Одеса"},
-                {id: 4, name: "Харків"},
-                {id: 5, name: "Дніпро"},
-                {id: 6, name: "Запоріжжя"},
-                {id: 7, name: "Вінниця"},
-                {id: 8, name: "Чернівці"},
-                {id: 10, name: "Тернопіль"}
+                {id: 1, name: "Україна"},
+                {id: 2, name: "Варшава"},
+                {id: 3, name: "Берлін"}
             ],
-            selectedCity: {id: 1, name: 'Київ'},
+            selectedCity: {id: 1, name: 'Україна'},
             subList: false,
             langs:[
                 {name: 'Укр', code: 'ua'},
@@ -96,6 +94,12 @@ export default {
                 {name: 'De', code: 'de'}
             ]
         }
+    },
+    setup() {
+        const { locale } = useI18n();
+        return {
+            currentLocale: locale
+        };
     }
 }
 </script>
