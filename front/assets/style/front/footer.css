@@ -4,7 +4,8 @@
 }
 .footer .container{
     display: flex;
-    justify-content: space-between;
+    align-items: self-start;
+    gap: 0 96px
 }
 .footer-title{
     color: #BAB4E1;
@@ -19,6 +20,11 @@
     display: flex;
     flex-direction: column;
     gap: 8px 0;
+}
+.footer-row{
+    display: flex;
+    align-items: self-start;
+    gap: 12px 96px
 }
 .footer-item a{
     color: #000;
@@ -75,4 +81,13 @@
     font-weight: 300;
     line-height: normal;
     margin: 42px auto 0;
+}
+@media screen and (max-width: 1100px) {   
+    .footer .container{
+        justify-content: space-between;
+        gap: 0;
+    } 
+    .footer-row{
+        flex-direction: column;
+    }
 }

@@ -24,3 +24,13 @@
     padding: 8px 12px;
     gap: 0 8px;
 }
+@media screen and (max-width: 1300px) {
+    .container{
+        padding: 0 24px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .container{
+        padding: 0 16px;
+    }
+}
